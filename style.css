@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 95vh;
+    background: linear-gradient(45deg, 
+                                #222222b2 0%, 
+                                #6b0505ef -50%, 
+                                #2e2d2dde 50%), 
+                                url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/*=== nav ===*/
+.nav {
+    height: 10vh;
+    padding: 0.5rem 6%;
+    justify-content: space-between;
+}
+
+/* logo */
+.logo {
+    justify-content: start;
+    /* column-gap: 0.25rem; */
+}
+
+.logo img {
+    width: 2.5rem;
+}
+
+.logo h2 {
+    color: #ff4500;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #1F9BBA;
+    font-weight: 400;
+}
+
+/* button */
+.btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(45deg, #ff0000 0%, #ffa500 100%);
+    transition: background 0.4s;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #ffa500 0%, #ff0000 100%);
+}
+
+
+/*=== hero ===*/
+.hero {
+    height: 85vh;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #ffa500;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: .9;
+    color: #37D0EE;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #37D0EE;
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-form {
+    background: #fff;
+    width: fit-content;
+}
+
+.hero-form input {
+    height: 4rem;
+    width: 350px;
+    padding: 0.5rem 1.25rem;
+    caret-color: #ffa500;
+}
+
+.hero-form .hero-btn {
+    height: 4rem;
+}
+
+.hero-btn-img {
+    width: 1.875rem;
+}
+
+.hero span {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #37D0EE;
+}
+
+/* footer */
+footer {
+    height: 5vh;
+    padding: .5rem 0;
+    text-align: center;
+    justify-content: space-evenly;
+    background: linear-gradient(45deg, 
+                                #222222b2 0%, 
+                                #6b0505ef -50%, 
+                                #2e2d2dde 50%), 
+                                url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+footer p {
+    padding: 0.1rem;
+    font-size: 0.75rem;
+    color: #f8f4f4;
+}
+
+footer p a {
+    color: #8fb1f3;
+    text-decoration: underline;
+    text-underline-offset: .2rem;
+    transition: all 0.4s;
+}
+
+footer p a:hover {
+    text-decoration: none;
+    color: #ffa500;
+}
+
+
+/* responsive design */
+@media screen and (max-width: 576px) {
+    .container {
+        background-size: cover;
+    }
+
+    .nav {
+        padding: .5rem 3%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 2rem;
+    }
+    
+    .logo h2 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.5rem 1.25rem;
+    }
+    
+    .hero h3 {
+        font-weight: 400;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: .9;
+    }
+    
+    .hero h1 {
+        font-size: 1.5rem;
+        line-height: 1;
+        text-align: center;
+    }
+    
+    .hero p {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+
+    .hero-form {
+        background: #fff;
+        width: fit-content;
+    }
+    
+    .hero-form input {
+        height: 2.5rem;
+        width: 190px;
+        padding: 0.25rem 1rem;
+    }
+    
+    .hero-form .hero-btn {
+        height: 2.5rem;
+    }
+    
+    .hero-btn-img {
+        width: 1.25rem;
+    }
+
+    .hero span {
+        font-size: 0.8rem;
+    }
+   
+    footer p {
+        font-size: 0.5rem;
+    }
+}
